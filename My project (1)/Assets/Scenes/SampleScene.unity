@@ -1,0 +1,1239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 34
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619394800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619394802}
+  - component: {fileID: 619394801}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &619394801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &619394802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1106787014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106787016}
+  - component: {fileID: 1106787015}
+  m_Layer: 0
+  m_Name: PuzzleBoard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1106787015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106787014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da026bcf47adb2f47bf3cace84e50569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleBoard
+  autoStart: 1
+  columns: 6
+  rows: 5
+  cellSize: 1
+  boardAtBottom: 1
+  sideMargin: 0
+  bottomMargin: 0.3
+  backgroundColor: {r: 0.55, g: 0.78, b: 0.98, a: 1}
+  backgroundSprite: {fileID: 0}
+  tileColorA: {r: 0.66, g: 0.48, b: 0.32, a: 1}
+  tileColorB: {r: 0.56, g: 0.4, b: 0.26, a: 1}
+  unlitSprites: 1
+  orbColors:
+  - {r: 0.95, g: 0.3, b: 0.3, a: 1}
+  - {r: 0.3, g: 0.55, b: 1, a: 1}
+  - {r: 0.35, g: 0.85, b: 0.4, a: 1}
+  - {r: 1, g: 0.85, b: 0.3, a: 1}
+  - {r: 0.7, g: 0.4, b: 0.95, a: 1}
+  - {r: 1, g: 0.5, b: 0.75, a: 1}
+  orbSprites: []
+  tintSprites: 0
+  heartType: 5
+  party:
+  - name: "\u706B\u306E\u5263\u58EB"
+    icon: {fileID: 0}
+    element: 0
+    attack: 1500
+    hp: 3200
+    recovery: 250
+  - name: "\u6C34\u306E\u9B54\u5C0E\u58EB"
+    icon: {fileID: 0}
+    element: 1
+    attack: 1300
+    hp: 2800
+    recovery: 400
+  - name: "\u6728\u306E\u5F13\u4F7F\u3044"
+    icon: {fileID: 0}
+    element: 2
+    attack: 1400
+    hp: 3000
+    recovery: 300
+  - name: "\u5149\u306E\u8056\u9A0E\u58EB"
+    icon: {fileID: 0}
+    element: 3
+    attack: 1200
+    hp: 3800
+    recovery: 350
+  - name: "\u95C7\u306E\u6697\u6BBA\u8005"
+    icon: {fileID: 0}
+    element: 4
+    attack: 1700
+    hp: 2500
+    recovery: 200
+  comboBonus: 0.25
+  extraOrbBonus: 0.25
+  enemyTypes:
+  - name: "\u30B9\u30E9\u30A4\u30E0"
+    sprite: {fileID: 0}
+    rank: 0
+    element: 1
+    hp: 6000
+    attack: 800
+    turns: 1
+  - name: "\u30B4\u30D6\u30EA\u30F3"
+    sprite: {fileID: 0}
+    rank: 0
+    element: 2
+    hp: 9000
+    attack: 1200
+    turns: 2
+  - name: "\u30B3\u30A6\u30E2\u30EA"
+    sprite: {fileID: 0}
+    rank: 0
+    element: 4
+    hp: 5000
+    attack: 1000
+    turns: 1
+  - name: "\u30B4\u30FC\u30EC\u30E0"
+    sprite: {fileID: 0}
+    rank: 1
+    element: 3
+    hp: 30000
+    attack: 2500
+    turns: 2
+  - name: "\u708E\u306E\u9B54\u5C0E\u58EB"
+    sprite: {fileID: 0}
+    rank: 1
+    element: 0
+    hp: 24000
+    attack: 3000
+    turns: 2
+  - name: "\u30C9\u30E9\u30B4\u30F3"
+    sprite: {fileID: 0}
+    rank: 2
+    element: 0
+    hp: 120000
+    attack: 6000
+    turns: 3
+  - name: "\u9B54\u738B"
+    sprite: {fileID: 0}
+    rank: 2
+    element: 4
+    hp: 150000
+    attack: 8000
+    turns: 3
+  totalStages: 10
+  zakoUntilStage: 4
+  chuUntilStage: 8
+  zakoCount: {x: 1, y: 3}
+  chuCount: {x: 1, y: 3}
+  bossCount: {x: 1, y: 2}
+  useElementAdvantage: 1
+  enemySize: 3.5
+  targetFrameRate: 60
+  useSafeArea: 1
+  touchOrbOffset: 0
+  moveTimeLimit: 4
+  swapRadius: 0.42
+  swapSpeed: 25
+  fallSpeed: 14
+  clearDuration: 0.3
+  orbScale: 0.95
+--- !u!4 &1106787016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106787014}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13497, y: 0.32858, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1805205336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805205339}
+  - component: {fileID: 1805205338}
+  - component: {fileID: 1805205337}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1805205337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805205336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1805205338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805205336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1805205339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805205336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023088338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023088342}
+  - component: {fileID: 2023088341}
+  - component: {fileID: 2023088340}
+  - component: {fileID: 2023088339}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023088339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023088338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2023088340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023088338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2023088341
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023088338}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2023088342
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023088338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &2055556183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055556185}
+  - component: {fileID: 2055556184}
+  m_Layer: 0
+  m_Name: GameFlow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2055556184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055556183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3f3f700e2098c4dbdc6ed8b7c6cbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlow
+  board: {fileID: 0}
+  gameTitle: "\u30D1\u30BA\u30EB\uFF06\u30D0\u30C8\u30EB"
+  font: {fileID: 0}
+  titleBackground: {fileID: 0}
+  menuBackground: {fileID: 0}
+  titleColor: {r: 0.98, g: 0.8, b: 0.45, a: 1}
+  menuColor: {r: 0.62, g: 0.82, b: 0.98, a: 1}
+  gachaColor: {r: 0.95, g: 0.72, b: 0.88, a: 1}
+  optionColor: {r: 0.78, g: 0.8, b: 0.86, a: 1}
+  enhanceColor: {r: 0.62, g: 0.86, b: 0.7, a: 1}
+  characterPool:
+  - name: "\u706B\u306E\u30E1\u30A4\u30C9"
+    icon: {fileID: -2309854653684985959, guid: 13cb4b364f72194418f1f1ab00885a86, type: 3}
+    iconResource: 
+    element: 0
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u706B\u306E\u5236\u670D\u306E\u5C11\u5973"
+    icon: {fileID: 647529870553044873, guid: 0bd5cf80f078fb946a0b51dc7ef10a63, type: 3}
+    iconResource: 
+    element: 0
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u706B\u306E\u82B1\u98FE\u308A\u306E\u5C11\u5973"
+    icon: {fileID: 8674695705789786075, guid: 25f3344193813e84eb27a282c97fba3c, type: 3}
+    iconResource: 
+    element: 0
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u706B\u306E\u59EB"
+    icon: {fileID: 1178025802362859598, guid: 93fa06f3e6c14494684d5bd61d22a4ac, type: 3}
+    iconResource: 
+    element: 0
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u6C34\u306E\u30E1\u30A4\u30C9"
+    icon: {fileID: 1052415736582428079, guid: 71ca2b26de5a2cc44ac90578c75af7e3, type: 3}
+    iconResource: 
+    element: 1
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u6C34\u306E\u5236\u670D\u306E\u5C11\u5973"
+    icon: {fileID: 8335046955403529231, guid: d86d8917c100df84db8ac77a6f5a6fae, type: 3}
+    iconResource: 
+    element: 1
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u6C34\u306E\u82B1\u98FE\u308A\u306E\u5C11\u5973"
+    icon: {fileID: 5378242613942998624, guid: 1bd5f7db898d3be4b8f71847fb9ea33a, type: 3}
+    iconResource: 
+    element: 1
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u6C34\u306E\u59EB"
+    icon: {fileID: 6200488909614091090, guid: 393a7b0ac9b76134985608ca7e87f0cf, type: 3}
+    iconResource: 
+    element: 1
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u6728\u306E\u30E1\u30A4\u30C9"
+    icon: {fileID: -4516860458605507979, guid: 05be57b6647a98a4db81fedb341e4c8e, type: 3}
+    iconResource: 
+    element: 2
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u6728\u306E\u5236\u670D\u306E\u5C11\u5973"
+    icon: {fileID: 7639485758800907363, guid: 3a44f8d5671448c4e9fecc3cce8e2704, type: 3}
+    iconResource: 
+    element: 2
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u6728\u306E\u82B1\u98FE\u308A\u306E\u5C11\u5973"
+    icon: {fileID: 7520282797282231005, guid: 05a76125de9606e4788093aaa6b1d378, type: 3}
+    iconResource: 
+    element: 2
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u6728\u306E\u59EB"
+    icon: {fileID: -8822821850949621707, guid: 199991b92a914bb40a3f5200175c714b, type: 3}
+    iconResource: 
+    element: 2
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u5149\u306E\u30E1\u30A4\u30C9"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 3
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u5149\u306E\u5236\u670D\u306E\u5C11\u5973"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 3
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u5149\u306E\u82B1\u98FE\u308A\u306E\u5C11\u5973"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 3
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u5149\u306E\u59EB"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 3
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u95C7\u306E\u30E1\u30A4\u30C9"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 4
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u95C7\u306E\u5236\u670D\u306E\u5C11\u5973"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 4
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u95C7\u306E\u82B1\u98FE\u308A\u306E\u5C11\u5973"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 4
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u95C7\u306E\u59EB"
+    icon: {fileID: 0}
+    iconResource: 
+    element: 4
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  newCharacters:
+  - name: "\u30D9\u30CB"
+    icon: {fileID: 0}
+    iconResource: chara_01_beni
+    element: 0
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u30A2\u30AB\u30CD"
+    icon: {fileID: 0}
+    iconResource: chara_02_akane
+    element: 0
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30D2\u30CE\u30B3"
+    icon: {fileID: 0}
+    iconResource: chara_03_hinoko
+    element: 0
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30AB\u30A8\u30F3"
+    icon: {fileID: 0}
+    iconResource: chara_04_kaen
+    element: 0
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30D5\u30EC\u30A2"
+    icon: {fileID: 0}
+    iconResource: chara_05_flare
+    element: 0
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30DB\u30E0\u30E9"
+    icon: {fileID: 0}
+    iconResource: chara_06_homura
+    element: 0
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u30B7\u30BA\u30AF"
+    icon: {fileID: 0}
+    iconResource: chara_07_shizuku
+    element: 1
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u30CA\u30AE"
+    icon: {fileID: 0}
+    iconResource: chara_08_nagi
+    element: 1
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30DF\u30CA\u30E2"
+    icon: {fileID: 0}
+    iconResource: chara_09_minamo
+    element: 1
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30EB\u30EA"
+    icon: {fileID: 0}
+    iconResource: chara_10_ruri
+    element: 1
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30BB\u30A4\u30E9"
+    icon: {fileID: 0}
+    iconResource: chara_11_seira
+    element: 1
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30A2\u30AA\u30A4"
+    icon: {fileID: 0}
+    iconResource: chara_12_aoi
+    element: 1
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u30EF\u30AB\u30D0"
+    icon: {fileID: 0}
+    iconResource: chara_13_wakaba
+    element: 2
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u30B3\u30CE\u30CF"
+    icon: {fileID: 0}
+    iconResource: chara_14_konoha
+    element: 2
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30E6\u30BA"
+    icon: {fileID: 0}
+    iconResource: chara_15_yuzu
+    element: 2
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30D2\u30B9\u30A4"
+    icon: {fileID: 0}
+    iconResource: chara_16_hisui
+    element: 2
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30E2\u30EA\u30CE"
+    icon: {fileID: 0}
+    iconResource: chara_17_morino
+    element: 2
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30DF\u30C9\u30EA"
+    icon: {fileID: 0}
+    iconResource: chara_18_midori
+    element: 2
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u30AD\u30E9\u30E9"
+    icon: {fileID: 0}
+    iconResource: chara_19_kirara
+    element: 3
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u30A2\u30B5\u30D2"
+    icon: {fileID: 0}
+    iconResource: chara_20_asahi
+    element: 3
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30BD\u30E9"
+    icon: {fileID: 0}
+    iconResource: chara_21_sora
+    element: 3
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30EB\u30AF\u30B9"
+    icon: {fileID: 0}
+    iconResource: chara_22_lux
+    element: 3
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30BB\u30EC\u30CA"
+    icon: {fileID: 0}
+    iconResource: chara_23_serena
+    element: 3
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30D2\u30AB\u30EA"
+    icon: {fileID: 0}
+    iconResource: chara_24_hikari
+    element: 3
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  - name: "\u30E4\u30DF"
+    icon: {fileID: 0}
+    iconResource: chara_25_yami
+    element: 4
+    rarity: 1
+    attack: 800
+    hp: 2000
+    recovery: 200
+  - name: "\u30AF\u30ED\u30A8"
+    icon: {fileID: 0}
+    iconResource: chara_26_chloe
+    element: 4
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30B7\u30AA\u30F3"
+    icon: {fileID: 0}
+    iconResource: chara_27_shion
+    element: 4
+    rarity: 2
+    attack: 1100
+    hp: 2600
+    recovery: 280
+  - name: "\u30E8\u30EB"
+    icon: {fileID: 0}
+    iconResource: chara_28_yoru
+    element: 4
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30EB\u30CA"
+    icon: {fileID: 0}
+    iconResource: chara_29_luna
+    element: 4
+    rarity: 3
+    attack: 1500
+    hp: 3300
+    recovery: 350
+  - name: "\u30DE\u30AA"
+    icon: {fileID: 0}
+    iconResource: chara_30_mao
+    element: 4
+    rarity: 4
+    attack: 2000
+    hp: 4200
+    recovery: 450
+  rarityRates:
+  - 40
+  - 35
+  - 20
+  - 5
+  singleCost: 50
+  tenCost: 500
+  startStones: 1000
+  starterCharacters: 0000000004000000080000000c00000010000000
+  duplicateBonus: 0.1
+  materials:
+  - name: "\u706B\u306E\u304B\u3051\u3089"
+    icon: {fileID: 6556350833067081374, guid: 343c998c50a2e86489989543f0567ccc, type: 3}
+    iconResource: mat_fire_shard
+    element: 0
+    exp: 150
+    grade: 1
+  - name: "\u6C34\u306E\u304B\u3051\u3089"
+    icon: {fileID: -3655928568134655842, guid: 5f42c9b56658443418de0337b848a746, type: 3}
+    iconResource: mat_water_shard
+    element: 1
+    exp: 150
+    grade: 1
+  - name: "\u6728\u306E\u304B\u3051\u3089"
+    icon: {fileID: -3749649204010667204, guid: de67c3c497e12de488c7548db577067e, type: 3}
+    iconResource: mat_wood_shard
+    element: 2
+    exp: 150
+    grade: 1
+  - name: "\u5149\u306E\u304B\u3051\u3089"
+    icon: {fileID: 8685225208820743801, guid: 81aa68fe27e31dd47a5fa147f67aa47b, type: 3}
+    iconResource: mat_light_shard
+    element: 3
+    exp: 150
+    grade: 1
+  - name: "\u95C7\u306E\u304B\u3051\u3089"
+    icon: {fileID: -3424400642596144852, guid: 36d8aa131748e0c4c854058a7819ba0b, type: 3}
+    iconResource: mat_dark_shard
+    element: 4
+    exp: 150
+    grade: 1
+  - name: "\u706B\u306E\u7D50\u6676"
+    icon: {fileID: 0}
+    iconResource: mat_fire_crystal
+    element: 0
+    exp: 600
+    grade: 2
+  - name: "\u6C34\u306E\u7D50\u6676"
+    icon: {fileID: 0}
+    iconResource: mat_water_crystal
+    element: 1
+    exp: 600
+    grade: 2
+  - name: "\u6728\u306E\u7D50\u6676"
+    icon: {fileID: 0}
+    iconResource: mat_wood_crystal
+    element: 2
+    exp: 600
+    grade: 2
+  - name: "\u5149\u306E\u7D50\u6676"
+    icon: {fileID: 0}
+    iconResource: mat_light_crystal
+    element: 3
+    exp: 600
+    grade: 2
+  - name: "\u95C7\u306E\u7D50\u6676"
+    icon: {fileID: 0}
+    iconResource: mat_dark_crystal
+    element: 4
+    exp: 600
+    grade: 2
+  - name: "\u8679\u306E\u30AA\u30FC\u30D6"
+    icon: {fileID: 0}
+    iconResource: mat_rainbow_orb
+    element: -1
+    exp: 3000
+    grade: 3
+  sameElementBonus: 1.5
+  statPerLevel: 0.05
+  expPerLevel: 50
+  zakoDropRate: 0.6
+  chuDropRate: 0.9
+  bossRainbowRate: 0.3
+  stageClearReward: 20
+  allClearReward: 300
+--- !u!4 &2055556185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055556183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.25937, y: -0.04445, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 519420032}
+  - {fileID: 619394802}
+  - {fileID: 2023088342}
+  - {fileID: 1805205339}
+  - {fileID: 1106787016}
+  - {fileID: 2055556185}
